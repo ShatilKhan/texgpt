@@ -9,6 +9,7 @@ dotenv.config();
 
 const configuration = new Configuration({
     apiKey: process.env.OPENAI_API_KEY,
+    basepath: '/api',
 });
 
 const openai = new OpenAIApi(configuration);
